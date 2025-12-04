@@ -1,0 +1,28 @@
+{
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright", "..."],
+      "format_on_save": "on",
+      "formatter": "language_server",
+      "inlay_hints": {
+        "enabled": false
+      },
+      "indent_guides": {
+        "background_coloring": "disabled"
+      }
+    }
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "basic"
+        }
+      }
+    }
+  },
+  "prettier": {
+    "allowed": true
+  }
+}
