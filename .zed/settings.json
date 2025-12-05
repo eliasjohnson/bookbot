@@ -1,4 +1,8 @@
 {
+  "inlay_hints": {
+    "show_value_hints": false
+  },
+  "show_completion_documentation": false,
   "languages": {
     "Python": {
       "language_servers": ["pyright", "..."],
@@ -24,5 +28,6 @@
   },
   "prettier": {
     "allowed": true
-  }
+  },
+  "show_completions_on_input": false
 }
