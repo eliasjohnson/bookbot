@@ -16,18 +16,8 @@
       }
     }
   },
-  "lsp": {
-    "pyright": {
-      "settings": {
-        "python.analysis": {
-          "diagnosticMode": "workspace",
-          "typeCheckingMode": "basic"
-        }
-      }
-    }
-  },
   "prettier": {
     "allowed": true
   },
-  "show_completions_on_input": false
+  "show_completions_on_input": true
 }

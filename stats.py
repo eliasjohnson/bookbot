@@ -4,7 +4,7 @@ def get_num_words(text):
     return f"Found {words} total words"
 
 def char_count(text):
-    """counts number of characters in text"""
+    """counts number of characters in text and returns dictionary"""
     text = text.lower()
     char_dict = {
         'a': 0,
@@ -38,3 +38,18 @@ def char_count(text):
         if i in char_dict:
             char_dict[i] += 1
     return char_dict
+
+def sort_on(items):
+    return items["num"]
+
+
+def sorted_list(char_dict):
+    """takes the dictionary of characters and their counts and returns a sorted list of dictionaries."""
+    sorted_list = []
+
+    for char, count in char_dict.items():
+        sorted_list.append({"char": char, "num": count})
+
+    sorted_list.sort(reverse=True, key=sort_on)
+
+    return sorted_list
